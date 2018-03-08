@@ -13,11 +13,14 @@ public class Circle {
 		this.radius = radius;
 	}
 	
-	
 	public String getType() {
 		return type;
 	}
-
+	
+	public int getRadius() {
+		return radius;
+	}
+	
 	public void setType(String type) {
 		this.type = type;
 	}

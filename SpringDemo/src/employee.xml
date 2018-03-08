@@ -8,7 +8,7 @@
                 
 	<bean id="circle" class="org.pankaj.learning.Circle">
 		<!-- <property name="type" value="Full"></property> -->
-		<constructor-arg value="20"></constructor-arg>
-		<constructor-arg value="30"></constructor-arg>
+		<constructor-arg index="0" value="Semi"></constructor-arg>
+		<constructor-arg index="1" value="30"></constructor-arg>
 	</bean>
 </beans>
