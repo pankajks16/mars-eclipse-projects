@@ -1,0 +1,22 @@
+package org.pankaj.learning;
+
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.xml.XmlBeanFactory; // Depricated. Don't use this way.
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.Resource;
+
+@SuppressWarnings("deprecation")
+public class DrawingApp {
+
+	public static void main(String[] args) {
+		System.out.println("This is the main class executing now .... ");
+//		Resource resource = new ClassPathResource("employee.xml");
+//		BeanFactory factory = new XmlBeanFactory(resource); // Deprecated Way !!!
+		ApplicationContext context = new ClassPathXmlApplicationContext("employee.xml");
+		
+		Circle c = (Circle) context.getBean("circle"); // getBean() has an Object class return type. Casting required !!!
+		System.out.println("Type of cirlce: " + c.getType());
+	}
+}

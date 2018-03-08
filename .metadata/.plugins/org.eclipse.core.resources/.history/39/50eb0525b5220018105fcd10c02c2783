@@ -1,0 +1,7 @@
+package org.pankaj.learning;
+
+public class Circle {
+	public void draw() {
+		System.out.println("Circle is drawn");
+	}
+}

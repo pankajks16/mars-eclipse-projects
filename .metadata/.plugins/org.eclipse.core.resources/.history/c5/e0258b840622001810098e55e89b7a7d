@@ -1,0 +1,11 @@
+package org.pankaj.learning;
+
+public class DrawingApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("This is the main class executing now .... ");
+		System.out.println(30);
+	}
+
+}

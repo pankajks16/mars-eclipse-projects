@@ -1,0 +1,19 @@
+package org.pankaj.learning;
+
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.xml.XmlBeanFactory;
+
+@SuppressWarnings("deprecation")
+public class DrawingApp {
+
+	public static void main(String[] args) {
+		System.out.println("This is the main class executing now .... ");
+		
+		BeanFactory factory = new XmlBeanFactory(null);
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,20 @@
+package org.pankaj.learning;
+
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.xml.XmlBeanFactory;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.Resource;
+
+@SuppressWarnings("deprecation")
+public class DrawingApp {
+
+	public static void main(String[] args) {
+		System.out.println("This is the main class executing now .... ");
+		Resource resource = new ClassPathResource("employee.xml");
+		BeanFactory factory = new XmlBeanFactory(resource);
+		
+		
+		
+	}
+
+}
