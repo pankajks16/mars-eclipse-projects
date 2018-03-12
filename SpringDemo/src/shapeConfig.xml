@@ -9,8 +9,39 @@
 	<bean id="circle" class="org.pankaj.learning.Circle">
 		<property name="type" value="Full"></property>
 		<property name="radius" value="20"></property>
-		
 		<!-- <constructor-arg index="0" value="Semi"></constructor-arg>
 		<constructor-arg index="1" value="30"></constructor-arg> -->
 	</bean>
+	
+	<bean id="triangle" class="org.pankaj.learning.Triangle" name="triangle-demo">
+		<property name="points">
+			<list>
+				<ref bean="point1" />
+				<ref bean="point2" />
+				<ref bean="point3" />
+			</list>
+		</property>
+		
+		<!-- <property name="pointA" ref="point1"></property>
+		<property name="pointB" ref="point2"></property>
+		<property name="pointC" ref="point3"></property> -->
+	</bean>
+	
+	<bean id="point1" class="org.pankaj.learning.Point">
+		<property name="x" value="0"></property>
+		<property name="y" value="0"></property>
+	</bean>
+	
+	<bean id="point2" class="org.pankaj.learning.Point">
+		<property name="x" value="-45"></property>
+		<property name="y" value="0"></property>
+	</bean>
+	
+	<bean id="point3" class="org.pankaj.learning.Point">
+		<property name="x" value="0"></property>
+		<property name="y" value="45"></property>
+	</bean>
+	
+	<alias name="triangle" alias="triangle-alias"/>
+	
 </beans>

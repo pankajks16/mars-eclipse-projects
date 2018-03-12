@@ -5,7 +5,6 @@ public class Circle {
 	private int radius;
 	//private String hello; // If we create this new hello variable, then we need to have a setter for this to get initialized.
 							// else it will throw error in console and also we need getter to used this value in other classes.
-	
 	public Circle() {
 		
 	}

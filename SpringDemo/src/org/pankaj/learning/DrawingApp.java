@@ -1,5 +1,11 @@
 package org.pankaj.learning;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.Set;
+import java.util.TreeSet;
+
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanFactory; // Depricated. Don't use this way.
 import org.springframework.context.ApplicationContext;
@@ -15,8 +21,13 @@ public class DrawingApp {
 //		BeanFactory factory = new XmlBeanFactory(resource); // Deprecated Way !!!
 		ApplicationContext context = new ClassPathXmlApplicationContext("shapeConfig.xml");
 		
-		Circle c = (Circle) context.getBean("circle"); // getBean() has an Object class return type. Casting required !!!
-		System.out.println("Type of cirlce:\n " + c.getType() + " circle of radius " + c.getRadius());
-		c.draw();
+//		Circle c = (Circle) context.getBean("circle"); // getBean() has an Object class return type. Casting required !!!
+//		System.out.println("Type of cirlce:\n " + c.getType() + " circle of radius " + c.getRadius());
+//		c.draw();
+//		
+		Triangle triangle = (Triangle) context.getBean("triangle-demo");
+		triangle.draw();
+		
+	  
 	}
 }
