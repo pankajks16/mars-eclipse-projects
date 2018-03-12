@@ -15,7 +15,6 @@ public class Triangle {
 		this.points = points;
 	}
 
-	
 	public void draw() {
 		for (Point point : points) {
 			System.out.println("Point = (" + point.getX() + ", " + point.getY() + ")");
@@ -24,10 +23,7 @@ public class Triangle {
 	
 	
 	
-	
-	
-	
-	
+
 // ----------- THE WAY TO USE THREE INDIVIDUAL OBJECTS TO SET POINTS -------------------
 //	private Point pointA;
 //	private Point pointB;
